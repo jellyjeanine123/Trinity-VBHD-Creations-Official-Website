@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Trinity VBHD Creations</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  background: #fff7fc;
+  color: #4a3150;
+}
+
+header {
+  background: linear-gradient(135deg, #ffb6dc, #cbb5ff, #aeeeff);
+  text-align: center;
+  padding: 35px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 42px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: white;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 3px 12px rgba(0,0,0,.1);
+}
+
+nav a {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 16px;
+  border-radius: 25px;
+  background: #ffe0f1;
+  color: #613f68;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background: #d9c8ff;
+}
+
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 45px 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #754b83;
+  font-size: 30px;
+}
+
+.welcome-box,
+.sustainable,
+.custom-box,
+.cart-box,
+.pickup-box {
+  background: white;
+  border-radius: 25px;
+  padding: 28px;
+  margin-top: 25px;
+  box-shadow: 0 5px 20px rgba(100,70,120,.12);
+}
+
+.welcome-box {
+  text-align: center;
+}
+
+.sustainable {
+  background: #e6ffe9;
+  border: 3px solid #a9e9b1;
+  text-align: center;
+}
+
+.email-note {
+  background: #fff0a8;
+  border-radius: 18px;
+  padding: 18px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.email-note a {
+  color: #70428c;
+  font-size: 18px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 18px;
+}
+
+.product {
+  background: white;
+  border-radius: 22px;
+  padding: 22px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(100,70,120,.12);
+  transition: .2s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.emoji {
+  font-size: 45px;
+}
+
+.product h3 {
+  color: #65426f;
+}
+
+button {
+  border: none;
+  border-radius: 25px;
+  padding: 11px 18px;
+  background: #d49bff;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background: #a971dc;
+}
+
+.custom-box {
+  text-align: center;
+}
+
+.custom-question {
+  margin-top: 20px;
+}
+
+.option-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 15px 0;
+}
+
+.option-buttons button {
+  background: #ffafd7;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 13px;
+  border: 2px solid #e4c8ed;
+  border-radius: 15px;
+  font-size: 16px;
+  margin: 8px 0 15px;
+  font-family: inherit;
+}
+
+textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.hidden {
+  display: none;
+}
+
+.success {
+  color: #16833a;
+  font-weight: bold;
+}
+
+.cart-item {
+  background: #fff3fa;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 10px 0;
+}
+
+.cart-count {
+  background: #ff70b7;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 8px;
+}
+
+.location-card {
+  border: 2px solid #e2cef0;
+  border-radius: 20px;
+  padding: 18px;
+  margin: 15px 0;
+}
+
+footer {
+  background: #cbb5ff;
+  text-align: center;
+  padding: 30px;
+}
+
+@media(max-width:600px) {
+  header h1 {
+    font-size: 31px;
+  }
+
+  nav a {
+    font-size: 13px;
+    padding: 8px 11px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🌸 Trinity VBHD Creations 🌸</h1>
+  <p>Homemade • Creative • 100% Sustainable ♻️</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#products">Products</a>
+  <a href="#custom">Custom Products</a>
+  <a href="#pickup">Pickup</a>
+  <a href="#cart">
+    🛒 Cart <span class="cart-count" id="cartCount">0</span>
+  </a>
+</nav>
+
+<!-- HOME -->
+
+<section id="home">
+
+  <div class="welcome-box">
+
+    <h2>💗 Welcome! 💗</h2>
+
+    <p>
+      Welcome! We at Trinity VBHD Creations, also known as
+      Vella, Bajada, Hilli, and Dimech, welcome you to our business!
+    </p>
+
+    <p>
+      We offer a whole list of stuff that we make, good for children
+      and adults. We offer homemade products that are
+      <strong>100% sustainable</strong>.
+    </p>
+
+    <div class="email-note">
+
+      📧 Send your order from your cart to this email to order!
+
+      <br><br>
+
+      <a href="mailto:sosodgreat@icloud.com">
+        sosodgreat@icloud.com
+      </a>
+
+    </div>
+
+  </div>
+
+  <div class="sustainable">
+
+    <h2>🌱 100% Sustainable</h2>
+
+    <p>
+      Our creations are homemade with sustainability in mind.
+      We aim to make fun and creative products while reusing
+      materials and reducing waste whenever possible.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- PRODUCTS -->
+
+<section id="products">
+
+<h2>🛍️ Our Products</h2>
+
+<div class="products">
+
+  <div class="product">
+    <div class="emoji">🧸</div>
+    <h3>Squishies</h3>
+    <p>Choose your own custom squishy.</p>
+    <button onclick="openCustomizer('Squishy','charm')">
+      Customize
+    </button>
+  </div>
+
+  <div class="product">
+    <div class="emoji">📱</div>
+    <h3>Phone Wallpapers / Stickers</h3>
+    <p>Choose your own design.</p>
+    <button onclick="openCustomizer('Phone Wallpaper / Sticker','design')">
+      Customize
+    </button>
+  </div>
+
+  <div class="product">
+    <div class="emoji">🖼️</div>
+    <h3>Posters</h3>
+    <button onclick="addToCart('Poster')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <div class="emoji">🌈</div>
+    <h3>Stickers</h3>
+    <p>Make your own custom stickers.</p>
+    <button onclick="openCustomizer('Sticker','charm')">
+      Customize
+    </button>
+  </div>
+
+  <div class="product">
+    <div class="emoji">📿</div>
+    <h3>Bracelets</h3>
+    <p>Choose your bracelet colour.</p>
+    <button onclick="openCustomizer('Bracelet','colour')">
+      Customize
+    </button>
+  </div>
+
+  <div class="product">
+    <div class="emoji">💎</div>
+    <h3>Necklaces</h3>
+    <p>Choose your necklace colour.</p>
+    <button onclick="openCustomizer('Necklace','colour')">
+      Customize
+    </button>
+  </div>
+
+  <div class="product">
+    <div class="emoji">🌊</div>
+    <h3>Water Globes</h3>
+    <button onclick="addToCart('Water Globe')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <div class="emoji">🥣</div>
+    <h3>Bowls</h3>
+    <button onclick="addToCart('Bowl')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <div class="emoji">🥤</div>
+    <h3>Cups</h3>
+    <button onclick="addToCart('Cup')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <div class="emoji">🧍</div>
+    <h3>Figures</h3>
+    <button onclick="addToCart('Figure')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <div class="emoji">🎮</div>
+    <h3>Origami Games</h3>
+    <button onclick="addToCart('Origami Game')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <div class="emoji">🖨️</div>
+    <h3>Logo Printing</h3>
+    <button onclick="addToCart('Logo Printing')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <div class="emoji">🛍️</div>
+    <h3>Paper Bags</h3>
+    <button onclick="addToCart('Paper Bag')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <div class="emoji">💖</div>
+    <h3>Cute Charms</h3>
+    <p>Design your own charm.</p>
+    <button onclick="openCustomizer('Cute Charm','charm')">
+      Customize
+    </button>
+  </div>
+
+  <div class="product">
+    <div class="emoji">📓</div>
+    <h3>Mini-Notebooks</h3>
+    <p>Choose your notebook colour.</p>
+    <button onclick="openCustomizer('Mini-Notebook','colour')">
+      Customize
+    </button>
+  </div>
+
+  <div class="product">
+    <div class="emoji">🎉</div>
+    <h3>Party Décor</h3>
+    <p>Choose your party décor colour.</p>
+    <button onclick="openCustomizer('Party Décor','colour')">
+      Customize
+    </button>
+  </div>
+
+</div>
+</section>
+
+
+<!-- CUSTOMIZER -->
+
+<section id="custom">
+
+<h2>✨ Customize Your Product ✨</h2>
+
+<div class="custom-box">
+
+  <h3 id="customTitle">
+    Choose a product above
+  </h3>
+
+  <!-- COLOUR -->
+
+  <div id="colourCustomizer" class="hidden">
+
+    <h3>🎨 What colour?</h3>
+
+    <input
+      id="colourInput"
+      type="text"
+      placeholder="Type the colour you want..."
+    >
+
+    <button onclick="submitCustomization()">
+      🛒 Add to Cart
+    </button>
+
+  </div>
+
+
+  <!-- DESIGN -->
+
+  <div id="designCustomizer" class="hidden">
+
+    <h3>🎨 What design?</h3>
+
+    <input
+      id="designInput"
+      type="text"
+      placeholder="Type the design you want..."
+    >
+
+    <button onclick="submitCustomization()">
+      🛒 Add to Cart
+    </button>
+
+  </div>
+
+
+  <!-- CHARM / STICKER / SQUISHY -->
+
+  <div id="charmCustomizer" class="hidden">
+
+    <h3>How do you want it?</h3>
+
+    <div class="option-buttons">
+
+      <button onclick="chooseType('animal')">
+        🐶 Animal
+      </button>
+
+      <button onclick="chooseType('shape')">
+        ⭐ Shape
+      </button>
+
+      <button onclick="chooseType('other')">
+        ✨ Other
+      </button>
+
+    </div>
+
+
+    <div id="animalInputBox" class="hidden">
+
+      <h3>🐾 What animal do you want?</h3>
+
+      <input
+        id="animalInput"
+        type="text"
+        placeholder="Example: cat, dog, bunny..."
+      >
+
+    </div>
+
+
+    <div id="shapeInputBox" class="hidden">
+
+      <h3>⭐ What shape do you want?</h3>
+
+      <input
+        id="shapeInput"
+        type="text"
+        placeholder="Example: heart, star, flower..."
+      >
+
+    </div>
+
+
+    <div id="otherInputBox" class="hidden">
+
+      <h3>✨ Write your order</h3>
+
+      <textarea
+        id="otherInput"
+        placeholder="Describe what you would like..."
+      ></textarea>
+
+    </div>
+
+
+    <button
+      id="submitCharmButton"
+      class="hidden"
+      onclick="submitCustomization()"
+    >
+      🛒 Submit Answer & Add to Cart
+    </button>
+
+  </div>
+
+
+  <p id="customMessage" class="success"></p>
+
+</div>
+
+</section>
+
+
+<!-- PICKUP -->
+
+<section id="pickup">
+
+<h2>📍 Pickup Locations</h2>
+
+<div class="pickup-box">
+
+<p>
+  <strong>Important:</strong>
+  Orders are available only for customers from
+  <strong>Malta or Gozo</strong>.
+</p>
+
+<label>
+  Choose your pickup location:
+</label>
+
+<select id="pickupLocation" onchange="showPickup()">
+
+  <option value="">
+    -- Choose a location --
+  </option>
+
+  <option value="Malta">
+    🇲🇹 Malta
+  </option>
+
+  <option value="Gozo">
+    🏝️ Gozo
+  </option>
+
+</select>
+
+
+<div id="malta" class="location-card hidden">
+
+  <h3>🇲🇹 Malta Pickup</h3>
+
+  <p>
+    Triq il-Ħtajriet 196<br>
+    Un Amour<br>
+    Mosta, Malta
+  </p>
+
+  <a
+    href="https://www.bing.com/maps/search?FORM=HDRSC6&q=triq+il+%C4%A7tajriet+196+mosta+malta&cp=36.039511%7E14.389924&lvl=11&style=r"
+    target="_blank"
+  >
+    <button>🗺️ Open Malta Map</button>
+  </a>
+
+</div>
+
+
+<div id="gozo" class="location-card hidden">
+
+  <h3>🏝️ Gozo Pickup</h3>
+
+  <p>
+    Triq Anton Calleja<br>
+    Anfield<br>
+    Kerċem, Gozo
+  </p>
+
+  <a
+    href="https://www.bing.com/maps/search?FORM=HDRSC6&style=r&q=triq+anton+calleja+anfield+kercem+Gozo&cp=36.071747%7E14.255603&lvl=16"
+    target="_blank"
+  >
+    <button>🗺️ Open Gozo Map</button>
+  </a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CART -->
+
+<section id="cart">
+
+<h2>🛒 Your Cart</h2>
+
+<div class="cart-box">
+
+<div id="cartItems">
+  <p>Your cart is empty.</p>
+</div>
+
+<hr>
+
+<h3>
+  Items:
+  <span id="cartTotal">0</span>
+</h3>
+
+<button onclick="placeOrder()">
+  📧 Order Cart
+</button>
+
+<button
+  onclick="clearCart()"
+  style="background:#ff789d;"
+>
+  🗑️ Clear Cart
+</button>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<h3>🌸 Trinity VBHD Creations 🌸</h3>
+
+<p>
+  Homemade • Creative • 100% Sustainable ♻️
+</p>
+
+<p>
+  Thank you for supporting our business! 💗
+</p>
+
+</footer>
+
+
+<script>
+
+let cart = [];
+
+let currentProduct = "";
+let currentType = "";
+let selectedCharmType = "";
+
+
+/* ADD NORMAL PRODUCT */
+
+function addToCart(product) {
+
+  cart.push(product);
+
+  updateCart();
+
+  alert(product + " was added to your cart! 🛒");
+
+}
+
+
+/* OPEN CUSTOMIZER */
+
+function openCustomizer(product, type) {
+
+  currentProduct = product;
+  currentType = type;
+  selectedCharmType = "";
+
+  document.getElementById("customTitle").textContent =
+    "Customize: " + product;
+
+  document.getElementById("colourCustomizer")
+    .classList.add("hidden");
+
+  document.getElementById("designCustomizer")
+    .classList.add("hidden");
+
+  document.getElementById("charmCustomizer")
+    .classList.add("hidden");
+
+  document.getElementById("customMessage")
+    .textContent = "";
+
+  if (type === "colour") {
+
+    document.getElementById("colourCustomizer")
+      .classList.remove("hidden");
+
+    document.getElementById("colourInput").value = "";
+
+  }
+
+  if (type === "design") {
+
+    document.getElementById("designCustomizer")
+      .classList.remove("hidden");
+
+    document.getElementById("designInput").value = "";
+
+  }
+
+  if (type === "charm") {
+
+    document.getElementById("charmCustomizer")
+      .classList.remove("hidden");
+
+    resetCharm();
+
+  }
+
+  document.getElementById("custom")
+    .scrollIntoView();
+
+}
+
+
+/* CHOOSE ANIMAL / SHAPE / OTHER */
+
+function chooseType(type) {
+
+  selectedCharmType = type;
+
+  document.getElementById("animalInputBox")
+    .classList.add("hidden");
+
+  document.getElementById("shapeInputBox")
+    .classList.add("hidden");
+
+  document.getElementById("otherInputBox")
+    .classList.add("hidden");
+
+  document.getElementById("submitCharmButton")
+    .classList.remove("hidden");
+
+  if (type === "animal") {
+
+    document.getElementById("animalInputBox")
+      .classList.remove("hidden");
+
+    document.getElementById("animalInput").value = "";
+
+  }
+
+  if (type === "shape") {
+
+    document.getElementById("shapeInputBox")
+      .classList.remove("hidden");
+
+    document.getElementById("shapeInput").value = "";
+
+  }
+
+  if (type === "other") {
+
+    document.getElementById("otherInputBox")
+      .classList.remove("hidden");
+
+    document.getElementById("otherInput").value = "";
+
+  }
+
+}
+
+
+/* SUBMIT ANY CUSTOM PRODUCT */
+
+function submitCustomization() {
+
+  let description = "";
+
+
+  /* COLOUR */
+
+  if (currentType === "colour") {
+
+    let colour =
+      document.getElementById("colourInput")
+      .value.trim();
+
+    if (!colour) {
+
+      alert("Please type the colour you want. 🎨");
+
+      return;
+
+    }
+
+    description =
+      currentProduct + " - Colour: " + colour;
+
+  }
+
+
+  /* DESIGN */
+
+  if (currentType === "design") {
+
+    let design =
+      document.getElementById("designInput")
+      .value.trim();
+
+    if (!design) {
+
+      alert("Please type the design you want. 🎨");
+
+      return;
+
+    }
+
+    description =
+      currentProduct + " - Design: " + design;
+
+  }
+
+
+  /* ANIMAL / SHAPE / OTHER */
+
+  if (currentType === "charm") {
+
+    if (!selectedCharmType) {
+
+      alert("Please choose Animal, Shape, or Other.");
+
+      return;
+
+    }
+
+
+    if (selectedCharmType === "animal") {
+
+      let animal =
+        document.getElementById("animalInput")
+        .value.trim();
+
+      if (!animal) {
+
+        alert("Please type the animal you want. 🐾");
+
+        return;
+
+      }
+
+      description =
+        currentProduct +
+        " - Animal: " +
+        animal;
+
+    }
+
+
+    if (selectedCharmType === "shape") {
+
+      let shape =
+        document.getElementById("shapeInput")
+        .value.trim();
+
+      if (!shape) {
+
+        alert("Please type the shape you want. ⭐");
+
+        return;
+
+      }
+
+      description =
+        currentProduct +
+        " - Shape: " +
+        shape;
+
+    }
+
+
+    if (selectedCharmType === "other") {
+
+      let other =
+        document.getElementById("otherInput")
+        .value.trim();
+
+      if (!other) {
+
+        alert("Please write your order. ✨");
+
+        return;
+
+      }
+
+      description =
+        currentProduct +
+        " - Custom Order: " +
+        other;
+
+    }
+
+  }
+
+
+  /* ADD TO CART */
+
+  cart.push(description);
+
+  updateCart();
+
+  document.getElementById("customMessage").textContent =
+    "✅ " + description +
+    " has been added to your cart! 🛒";
+
+  alert(
+    description +
+    " was added to your cart! 🛒"
+  );
+
+}
+
+
+/* RESET CHARM */
+
+function resetCharm() {
+
+  document.getElementById("animalInputBox")
+    .classList.add("hidden");
+
+  document.getElementById("shapeInputBox")
+    .classList.add("hidden");
+
+  document.getElementById("otherInputBox")
+    .classList.add("hidden");
+
+  document.getElementById("submitCharmButton")
+    .classList.add("hidden");
+
+}
+
+
+/* UPDATE CART */
+
+function updateCart() {
+
+  let items =
+    document.getElementById("cartItems");
+
+  document.getElementById("cartCount")
+    .textContent = cart.length;
+
+  document.getElementById("cartTotal")
+    .textContent = cart.length;
+
+
+  if (cart.length === 0) {
+
+    items.innerHTML =
+      "<p>Your cart is empty.</p>";
+
+    return;
+
+  }
+
+
+  items.innerHTML = "";
+
+  cart.forEach((item, index) => {
+
+    let div =
+      document.createElement("div");
+
+    div.className = "cart-item";
+
+    div.innerHTML =
+      "<strong>" +
+      (index + 1) +
+      ". " +
+      escapeHTML(item) +
+      "</strong>" +
+      "<br>" +
+      "<button onclick='removeFromCart(" +
+      index +
+      ")' style='background:#ff789d;'>" +
+      "Remove" +
+      "</button>";
+
+    items.appendChild(div);
+
+  });
+
+}
+
+
+/* REMOVE ITEM */
+
+function removeFromCart(index) {
+
+  cart.splice(index, 1);
+
+  updateCart();
+
+}
+
+
+/* CLEAR CART */
+
+function clearCart() {
+
+  if (cart.length === 0) return;
+
+  if (
+    confirm(
+      "Are you sure you want to clear your cart?"
+    )
+  ) {
+
+    cart = [];
+
+    updateCart();
+
+  }
+
+}
+
+
+/* PICKUP LOCATION */
+
+function showPickup() {
+
+  let location =
+    document.getElementById("pickupLocation")
+    .value;
+
+  document.getElementById("malta")
+    .classList.add("hidden");
+
+  document.getElementById("gozo")
+    .classList.add("hidden");
+
+
+  if (location === "Malta") {
+
+    document.getElementById("malta")
+      .classList.remove("hidden");
+
+  }
+
+
+  if (location === "Gozo") {
+
+    document.getElementById("gozo")
+      .classList.remove("hidden");
+
+  }
+
+}
+
+
+/* ORDER BY EMAIL */
+
+function placeOrder() {
+
+  if (cart.length === 0) {
+
+    alert(
+      "Your cart is empty! Please add something first. 🛒"
+    );
+
+    return;
+
+  }
+
+
+  let pickup =
+    document.getElementById("pickupLocation")
+    .value;
+
+
+  if (!pickup) {
+
+    alert(
+      "Please choose Malta or Gozo as your pickup location. 📍"
+    );
+
+    document.getElementById("pickup")
+      .scrollIntoView();
+
+    return;
+
+  }
+
+
+  let address = "";
+
+
+  if (pickup === "Malta") {
+
+    address =
+      "Triq il-Ħtajriet 196, Un Amour, Mosta, Malta";
+
+  }
+
+
+  if (pickup === "Gozo") {
+
+    address =
+      "Triq Anton Calleja, Anfield, Kerċem, Gozo";
+
+  }
+
+
+  let orderList =
+    cart.map(function(item, index) {
+
+      return (
+        (index + 1) +
+        ". " +
+        item
+      );
+
+    }).join("\n");
+
+
+  let subject =
+    "Trinity VBHD Creations Order";
+
+
+  let body =
+    "Hello Trinity VBHD Creations!\n\n" +
+
+    "I would like to place an order.\n\n" +
+
+    "MY ORDER:\n" +
+
+    orderList +
+
+    "\n\nPICKUP LOCATION:\n" +
+
+    pickup +
+
+    "\n" +
+
+    address +
+
+    "\n\nThank you!";
+
+
+  let mailto =
+    "mailto:sosodgreat@icloud.com" +
+
+    "?subject=" +
+    encodeURIComponent(subject) +
+
+    "&body=" +
+    encodeURIComponent(body);
+
+
+  window.location.href = mailto;
+
+}
+
+
+/* SECURITY */
+
+function escapeHTML(text) {
+
+  let div =
+    document.createElement("div");
+
+  div.textContent = text;
+
+  return div.innerHTML;
+
+}
+
+
+updateCart();
+
+</script>
+
+</body>
+</html>
